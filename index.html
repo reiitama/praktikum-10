@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="action-message">
+        Rock Paper Scissor Games
+    </header>
+    <div class="selection">
+        <button class="select" data-selection="rock">
+            <img class="size-button" src="img/rock.png" alt="rock">
+        </button>
+        <button class="select" data-selection="paper">
+            <img class="size-button" src="img/paper.png" alt="paper">
+        </button>
+        <button class="select" data-selection="scissors">
+            <img class="size-button" src="img/scissors.png" alt="scissor">
+        </button>
+    </div>
+    <button class="restart" value="Reset Count" onclick="restart()">
+        <h4>RESET</h4>
+    </button>
+    <div class="result">
+        <div class="size-text">
+            You
+            <span class="result-score" data-your-score>0</span>
+        </div>
+        <div class="size-text" data-final-column>
+            Computer
+            <span class="result-score" data-computer-score>0</span>
+        </div>
+    </div>
+</body>
+</html>
